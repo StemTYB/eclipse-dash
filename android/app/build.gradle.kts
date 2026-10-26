@@ -69,7 +69,7 @@ android {
 }
 
 val siteAssets by tasks.registering(Sync::class) {
-    val pack = rootProject.file("../pack/celica")
+    val pack = rootProject.file("../pack/eclipse")
     from(pack) { include("api/**") }
     from(pack) { include("fig/**"); into("assets") }
     into(layout.buildDirectory.dir("generated/site-assets/site"))
