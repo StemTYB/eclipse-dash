@@ -43,7 +43,7 @@ def boot():
 
 
 def update():
-    g = sh(["./gradlew", "assembleDebug", "-q"], cwd=os.path.join(ROOT, "android"), shell=True)
+    g = sh(["gradlew", "assembleDebug", "-q"], cwd=os.path.join(ROOT, "android"), shell=True)
     if g.returncode != 0:
         print(g.stdout[-3000:] or g.stderr[-3000:])
         return
