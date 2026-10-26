@@ -22,7 +22,7 @@ one thing. Set up for your Eclipse in a few minutes.
 
 ## Install — four steps
 
-1. **Download** the latest `EclipseDash-Setup-vX.zip` from [Releases](../../releases) and unzip it.
+1. **Wait** for a Release in [Releases](../../releases) and unzip it.
 2. **On the PC:** double-click `RUN ME.cmd` (Mac: `RUN ME.command`). A wizard opens in your
    browser. Answer its pages — your car, where you drive, colours, your phone — and let it make
    the offline map and pack your music. That's the typing-heavy part, done where there's a
