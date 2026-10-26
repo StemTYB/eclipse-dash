@@ -1,9 +1,9 @@
-# Celica Dash
-https://www.reddit.com/r/Celica/comments/1wm11ir/custom_infotainment/
+# Eclipse Dash (3G)
+*Forked from the original [Celica Dash](https://www.reddit.com/r/Celica/comments/1wm11ir/custom_infotainment/). This version introduces a custom car pack built specifically for the 3rd Generation Mitsubishi Eclipse.*
 
 A launcher for the Android head unit in your car: gauges straight off the engine, an offline map
 with turn-by-turn, your music, your phone, the fusebox and the workshop manual — all dressed as
-one thing. Written for a 2003 Celica; set up for yours in a few minutes.
+one thing. Set up for your Eclipse in a few minutes.
 
 <p align="center">
   <img src="docs/screenshots/home.png" width="49%" alt="Home: the wireframe car, speed, revs, what is playing, the weather">
@@ -22,14 +22,14 @@ one thing. Written for a 2003 Celica; set up for yours in a few minutes.
 
 ## Install — four steps
 
-1. **Download** the latest `CelicaDash-Setup-vX.zip` from [Releases](../../releases) and unzip it.
+1. **Download** the latest `EclipseDash-Setup-vX.zip` from [Releases](../../releases) and unzip it.
 2. **On the PC:** double-click `RUN ME.cmd` (Mac: `RUN ME.command`). A wizard opens in your
    browser. Answer its pages — your car, where you drive, colours, your phone — and let it make
    the offline map and pack your music. That's the typing-heavy part, done where there's a
    keyboard.
 3. **On the unit:** open its web browser and type the address the wizard's *Install* page shows.
    Tap the download to install. (Android asks once to allow installs from the browser — say yes.)
-4. **Open Celica Dash.** Its own short Setup finds the PC by itself, takes your answers, and
+4. **Open Eclipse Dash.** Its own short Setup finds the PC by itself, takes your answers, and
    fetches the map and music. Grant what it asks; make it the Home app on the last page.
 
 Nothing is final — every answer is in the dash's **Settings ⚙** again, and RUN ME can be run any
@@ -43,8 +43,7 @@ wizard's last page): three ways to install, every page explained, troubleshootin
 
 ## What it does
 
-- **Drive** — six faces for the engine (tach, sweep, numbers, track, theatre, analogue), the lift
-  zone on a 2ZZ, gear readout, drive recording and replay, a ghost of your best run.
+- **Drive** — six faces for the engine (tach, sweep, numbers, track, theatre, analogue), gear readout, drive recording and replay, a ghost of your best run.
 - **Map** — offline, 3D, heading-up, from OpenStreetMap for the region you pick. Hold a spot to
   pin it; GO for spoken turn-by-turn. Fuel stops and places on the map and in the search.
 - **Media** — what the phone plays over Bluetooth, and a Library of your own songs the dash plays
@@ -53,7 +52,7 @@ wizard's last page): three ways to install, every page explained, troubleshootin
   zlink's connect screen with its own and can end a session cleanly.
 - **Garage** — fusebox, service log, specifications, checklist. **Manual** — the workshop manual,
   searchable, every page a figure you can pinch.
-- **Yours** — car name and labels, 2ZZ / 1ZZ / other engine, stock or GT-wing wireframe, any
+- **Yours** — car name and labels, 3.0L V6 6G72 / 2.4L 4G64 / other engine, stock or GT wireframe, any
   accent and background, miles or kilometres, the voice's language, iPhone or Android.
 
 <p align="center">
@@ -72,11 +71,11 @@ wizard's last page): three ways to install, every page explained, troubleshootin
 ## Building it yourself
 
 `android/` is the app (Kotlin + Compose; see `android/README.md`), `setup/` the PC helper and
-wizard, `pack/celica/` the car pack, `tools/` the things that make the pack and the routing tool.
+wizard, `pack/eclipse/` the car pack, `tools/` the things that make the pack and the routing tool.
 `python make_release.py` builds the APK and the Java tool and zips the distributable.
 
 ## Licence
 
 MIT for the code — see `LICENSE`. Map data © OpenStreetMap contributors (ODbL); the libraries and
-data it stands on are listed in `LICENSES/`. The workshop manual pages in the Celica pack are
-Toyota's, included for personal reference.
+data it stands on are listed in `LICENSES/`. The workshop manual pages in the Eclipse pack are
+Mitsubishi's, included for personal reference.
